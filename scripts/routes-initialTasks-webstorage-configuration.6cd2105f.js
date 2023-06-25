@@ -55,7 +55,7 @@
             .when('/viewmpesatransaction/:id', {
                 templateUrl: 'views/mpesa/viewmpesatransaction.html'
             })
-            .when('/viewlicence/', {
+            .when('/viewlicences/', {
                 templateUrl: 'views/licences/viewlicences.html'
             })
             .when('/edittemplate/:id', {
