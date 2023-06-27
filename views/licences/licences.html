@@ -1,0 +1,38 @@
+<div class="content-container" ng-controller="LicencesController">
+    <ul class="breadcrumb">
+        <li class="active">{{'label.anchor.licences' | translate}}</li>
+    </ul>
+    <div class="card">
+        <div class="toolbar">
+            <h4>List of Licences</h4>
+        </div>
+        <br>
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-2 col-md-2">
+                    <a href="#/createlicences" class="btn btn-primary pull-right" has-permission='CREATE_TEMPLATE'><i
+                            class="fa fa-plus "></i>&nbsp;&nbsp;{{'label.button.createlicences' | translate }}</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <table class="table">
+            <thead>
+                <tr class="graybg">
+                    <th>{{ 'label.heading.id' | translate }}</th>
+                    <th>{{ 'label.heading.name of organization' | translate }}</th>
+                    <th>{{ 'label.heading.licences key' | translate }}</th>
+                    <th>{{ 'label.heading.date of submission' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pointer-main" ng-repeat="template in templates | filter:filterText">
+                    <td class="pointer" data-ng-click="routeTo(licences.id)">{{licences.id}}</td>
+                    <td class="pointer" data-ng-click="routeTo(licences.id)">{{licences.nameoforganization}}</td>
+                    <td class="pointer" data-ng-click="routeTo(licences.id)">{{licences.licenceskey}}</td>
+                    <td class="pointer" data-ng-click="routeTo(licences.id)">{{licences.dateofsubmission}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

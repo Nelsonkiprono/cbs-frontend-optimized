@@ -22,6 +22,9 @@
             .when('/templates', {
                 templateUrl: 'views/templates/templates.html'
             })
+            .when('/licences', {
+                templateUrl: 'views/licences/licences.html'
+            })
             .when('/createstandinginstruction/:officeId/:clientId/:accountType', {
                 templateUrl: 'views/accounttransfers/create_standinginstruction.html'
             })
