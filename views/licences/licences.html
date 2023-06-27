@@ -1,6 +1,6 @@
 <div class="content-container" ng-controller="LicencesController">
     <ul class="breadcrumb">
-        <li class="active">{{'label.anchor.licences' | translate}}</li>
+        <li class="active">licences</li>
     </ul>
     <div class="card">
         <div class="toolbar">
@@ -10,8 +10,8 @@
         <div class="content">
             <div class="row">
                 <div class="col-sm-2 col-md-2">
-                    <a href="#/createlicences" class="btn btn-primary pull-right" has-permission='CREATE_TEMPLATE'><i
-                            class="fa fa-plus "></i>&nbsp;&nbsp;{{'label.button.createlicences' | translate }}</a>
+                    <a href="#/createlicences" class="btn btn-primary pull-right" has-permission='CREATE_LICENCES'><i>
+                            class="fa fa-plus "></i>&nbsp;&nbsp;{{'button.createlicences'}}</a>
                 </div>
             </div>
         </div>
@@ -19,10 +19,10 @@
         <table class="table">
             <thead>
                 <tr class="graybg">
-                    <th>{{ 'label.heading.id' | translate }}</th>
-                    <th>{{ 'label.heading.name of organization' | translate }}</th>
-                    <th>{{ 'label.heading.licences key' | translate }}</th>
-                    <th>{{ 'label.heading.date of submission' | translate }}</th>
+                    <th>id</th>
+                    <th>Name Of Organization</th>
+                    <th>Licences Key</th>
+                    <th>Date Of Submission</th>
                 </tr>
             </thead>
             <tbody>
