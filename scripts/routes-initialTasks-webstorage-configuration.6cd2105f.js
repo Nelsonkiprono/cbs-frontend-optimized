@@ -320,7 +320,7 @@
             .when('/offices', {
                 templateUrl: 'views/organization/offices.html'
             })
-            .when('/createoffice', {
+            .when('/createlicences', {
                 templateUrl: 'views/licences/createlicences.html'
             })
             .when('/createlicences', {
