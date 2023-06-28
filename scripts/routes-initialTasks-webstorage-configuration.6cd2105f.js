@@ -25,6 +25,9 @@
             .when('/licences', {
                 templateUrl: 'views/licences/licences.html'
             })
+            .when('/createlicences', {
+                templateUrl: 'views/licences/createlicences.html'
+            })
             .when('/createstandinginstruction/:officeId/:clientId/:accountType', {
                 templateUrl: 'views/accounttransfers/create_standinginstruction.html'
             })
@@ -320,10 +323,7 @@
             .when('/offices', {
                 templateUrl: 'views/organization/offices.html'
             })
-            .when('/createlicences', {
-                templateUrl: 'views/licences/createlicences.html'
-            })
-            .when('/createlicences', {
+            .when('/createoffice', {
                 templateUrl: 'views/organization/createoffice.html'
             })
             .when('/viewoffice/:id', {
