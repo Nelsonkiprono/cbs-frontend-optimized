@@ -1,0 +1,66 @@
+<div class="content-container">
+    <ul class="breadcrumb">
+        <li><a href="#/licences">Licences</a></li>
+        <li class="active">createlicences</li>
+    </ul>
+    <div class="card">
+        <div class="content">
+            <div class="toolbar">
+                <h4>createlicences</h4>
+            </div>
+            <br />
+            <form name="createlicencesform" novalidate="" class="form-horizontal"
+                ng-controller="CreatelicencesController" rc-submit="submit()">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">id<span class="required">*</span></label>
+
+                        <div class="col-sm-3">
+                            <input id="name" ng-autofocus="true" type="text" name="name" ng-model="formData.name"
+                                class="form-control" required late-Validate />
+                        </div>
+                        <div class="col-sm-3">
+                            <form-validate valattributeform="createlicencesform" valattribute="name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Name of organization<span
+                                class="required">*</span></label>
+
+                        <div class="col-sm-3">
+                            <select chosen="licences" id="licencesId" ng-model="formData.licencesId"
+                                class="form-control" ng-options="licences.id as licences.name for licences in licencces"
+                                value="{{licences.id}}"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Date Of Submission<span class="required">*</span></label>
+
+                        <div class="col-sm-3">
+                            <input id="openingDate" sort type="text" datepicker-pop="dd MMMM yyyy" ng-model="first.date"
+                                class="form-control" is-open="opened" min="minDat()" max="restrictDate" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Licences Key</label>
+
+                        <div class="col-sm-3">
+                            <input id="licenceskey" type="text" name="licenceskey" class="form-control"
+                                ng-model="formData.licenceskey">
+                        </div>
+                    </div>
+                    <div class="col-md-offset-3">
+                        <a id="cancel" href="#/licences">
+                            <button type="reset" class="btn btn-default">Cancel</button>
+                        </a>
+                        <button id="save" type="submit" class="btn btn-primary"
+                            has-permission='CREATE_licencs'>Save</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

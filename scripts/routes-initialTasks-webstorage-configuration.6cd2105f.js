@@ -321,6 +321,9 @@
                 templateUrl: 'views/organization/offices.html'
             })
             .when('/createoffice', {
+                templateUrl: 'views/licences/createlicences.html'
+            })
+            .when('/createlicences', {
                 templateUrl: 'views/organization/createoffice.html'
             })
             .when('/viewoffice/:id', {
