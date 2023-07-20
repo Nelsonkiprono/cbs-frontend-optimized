@@ -19672,7 +19672,7 @@
             scope.officeIdCollection = 1;
 
             scope.switch = function() {
-	        	location.path('/richdashboard');
+	        	location.path('/home');
 			}
 
             scope.$on("UserAuthenticationSuccessEvent", function (event, data) {

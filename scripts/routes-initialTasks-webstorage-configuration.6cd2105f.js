@@ -8,6 +8,9 @@
                 templateUrl: 'views/login.html'
             })
             .when('/home', {
+                templateUrl: 'views/private/rich_dashboard.html'
+            })
+            .when('/home2', {
                 templateUrl: 'views/home.html'
             })
             .when('/richdashboard', {

@@ -65,7 +65,7 @@ describe("MainController", function () {
             expect(this.scope.currentSession).toEqual("test_session");
         });
         it("should redirect to the home page", function () {
-            expect(this.location.path).toHaveBeenCalledWith('/richdashboard');
+            expect(this.location.path).toHaveBeenCalledWith('/home');
         });
     });
 
