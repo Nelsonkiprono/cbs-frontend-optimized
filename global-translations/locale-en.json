@@ -402,7 +402,7 @@
   "label.mustbenumeric": "Must be numeric",
   "label.usernameminfivechars": "Username must be at least five characters long.",
   "label.passwordminsixchars": "Password must be at least six characters long.",
-  "label.percentage": "Percentage",
+  "label.percentage": "Percentage Allocation",
   "label.outstanding.amount": "Outstanding Loan Amount",
   "label.and": "And",
   "label.message.password.expired": "Your password has expired, please reset your password.",
