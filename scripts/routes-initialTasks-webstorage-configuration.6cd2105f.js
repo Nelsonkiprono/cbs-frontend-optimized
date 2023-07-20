@@ -2,7 +2,7 @@
     var defineRoutes = function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'views/home.html'
+                templateUrl: 'views/private/rich_dashboard.html'
             })
             .when('/login', {
                 templateUrl: 'views/login.html'
