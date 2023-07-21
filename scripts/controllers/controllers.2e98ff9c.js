@@ -4220,7 +4220,7 @@
                 }
             };
             scope.displayUnderAgeOptions = function (isDependent) {
-                if(isDependent == 0) {
+                if(isDependent == false) {
                     scope.showUnderAgeOptions = false;
                 }else { 
                     scope.showUnderAgeOptions = true;
