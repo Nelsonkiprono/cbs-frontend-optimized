@@ -4215,8 +4215,15 @@
             scope.displayPersonOrNonPersonOptions = function (legalFormId) {
                 if(legalFormId == scope.clientPersonId || legalFormId == null) {
                     scope.showNonPersonOptions = false;
-                }else {
+                }else { 
                     scope.showNonPersonOptions = true;
+                }
+            };
+            scope.displayUnderAgeOptions = function (isDependent) {
+                if(isDependent == 0) {
+                    scope.showUnderAgeOptions = false;
+                }else { 
+                    scope.showUnderAgeOptions = true;
                 }
             };
 
@@ -4441,6 +4448,7 @@
                     }
                     if(scope.familyArray[i].isDependent)
                     {
+                        scope.displayUnderAgeOptions(scope.familyArray[i].isDependent);
                         temp.isDependent=scope.familyArray[i].isDependent;
                     }
                     if(scope.familyArray[i].genderId)
@@ -4454,6 +4462,30 @@
                     if(scope.familyArray[i].maritalStatusId)
                     {
                         temp.maritalStatusId=scope.familyArray[i].maritalStatusId;
+                    }
+                    if(scope.familyArray[i].trusteefirstname)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteefirstname;
+                    }
+                    if(scope.familyArray[i].trusteelastname)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteelastname;
+                    }
+                    if(scope.familyArray[i].trusteemobile)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteemobile;
+                    }
+                    if(scope.familyArray[i].trusteemail)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteemail;
+                    }
+                    if(scope.familyArray[i].trusteeid)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteeid;
+                    }
+                    if(scope.familyArray[i].trusteealtphone)
+                    {
+                        temp.professionId=scope.familyArray[i].trusteealtphone;
                     }
                     if(scope.familyArray[i].dateOfBirth)
                     {
