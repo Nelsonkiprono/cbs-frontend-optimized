@@ -4465,27 +4465,27 @@
                     }
                     if(scope.familyArray[i].trusteefirstname)
                     {
-                        temp.professionId=scope.familyArray[i].trusteefirstname;
+                        temp.trusteefirstname=scope.familyArray[i].trusteefirstname;
                     }
                     if(scope.familyArray[i].trusteelastname)
                     {
-                        temp.professionId=scope.familyArray[i].trusteelastname;
+                        temp.trusteelastname=scope.familyArray[i].trusteelastname;
                     }
                     if(scope.familyArray[i].trusteemobile)
                     {
-                        temp.professionId=scope.familyArray[i].trusteemobile;
+                        temp.trusteemobile=scope.familyArray[i].trusteemobile;
                     }
                     if(scope.familyArray[i].trusteemail)
                     {
-                        temp.professionId=scope.familyArray[i].trusteemail;
+                        temp.trusteemail=scope.familyArray[i].trusteemail;
                     }
                     if(scope.familyArray[i].trusteeid)
                     {
-                        temp.professionId=scope.familyArray[i].trusteeid;
+                        temp.trusteeid=scope.familyArray[i].trusteeid;
                     }
                     if(scope.familyArray[i].trusteealtphone)
                     {
-                        temp.professionId=scope.familyArray[i].trusteealtphone;
+                        temp.trusteealtphone=scope.familyArray[i].trusteealtphone;
                     }
                     if(scope.familyArray[i].dateOfBirth)
                     {
