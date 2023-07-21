@@ -4446,6 +4446,10 @@
                     {
                         temp.age=scope.familyArray[i].age;
                     }
+                    if(scope.familyArray[i].percentage)
+                    {
+                        temp.percentage=scope.familyArray[i].percentage;
+                    }
                     if(scope.familyArray[i].isDependent)
                     {
                         scope.displayUnderAgeOptions(scope.familyArray[i].isDependent);
