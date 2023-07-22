@@ -68,7 +68,79 @@
                 </div>
 
             </div>
-
+            <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteefirstname">{{'label.input.trusteename' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteefirstname" name="trusteefirstname" ng-model="formData.trusteefirstname"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
+             <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteelastname">{{'label.input.trusteelastname' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteelastname" name="trusteelastname" ng-model="formData.trusteelastname"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
+             <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteemobile">{{'label.input.trusteemobile' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteemobile" name="trusteemobile" ng-model="formData.trusteemobile"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
+            
+             <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteemail">{{'label.input.trusteemail' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteemail" name="trusteemail" ng-model="formData.trusteemail"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
+             <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteeid">{{'label.input.trusteeid' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteeid" name="trusteeid" ng-model="formData.trusteeid"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
+             <div data-ng-switch on="showUnderAgeOptions">
+                <div data-ng-switch-when="true">
+                   <div class="form-group">
+                      <label class="control-label col-sm-2" for="trusteealtphone">{{'label.input.trusteeid' |
+                         translate}}</label>
+                         <div class="col-sm-3">
+                            <input type="text" id="trusteeid" name="trusteeid" ng-model="formData.trusteealtphone"
+                               class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required late-Validate />
+                         </div>
+                   </div>
+                </div>
+             </div>
 
             <div class="form-group">
                 <div class="control-label col-sm-2">
