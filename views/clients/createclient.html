@@ -328,7 +328,7 @@
                               translate}}</label>
                            <div class="col-sm-3">
                               <textarea type="text" id="remarks" ng-model="formData.clientNonPersonDetails.remarks"
-                                 rows="4" class="form-control" />
+                                 rows="4" class="form-control">
                            </div>
                         </div>
                      </div>
@@ -366,7 +366,8 @@
 
                      <div class="col-sm-3">
                         <input id="BankName" type="text" name="BankName" class="form-control"
-                           ng-model="formData.BankName">
+                           ng-model="formData.BankName" class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required
+                           late-validation />
                      </div>
                   </div>
 
@@ -375,7 +376,8 @@
 
                      <div class="col-sm-3">
                         <input id="BankBranch" type="text" name="BankBranch" class="form-control"
-                           ng-model="formData.BankBranch">
+                           ng-model="formData.BankBranch" class="form-control" ng-pattern="/(^[A-z])[A-z.'-]*/" required
+                           late-validation />
                      </div>
                   </div>
 
@@ -540,7 +542,91 @@
 
                            <div class="col-sm-3">
                               <input type="checkbox" class="input-mini-small" id="isDependent" name="isDependent"
-                                 ng-model="familyArray[$index].isDependent">
+                                 ng-model="familyArray[$index].isDependent" data-ng-change="setChoice()">
+                           </div>
+                           <div data-ng-change on="choice">
+                              <div data-ng-switch-when="1">
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Name<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="Name" type="text" name="Name" class="form-control"
+                                          ng-model="formData.Name">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Relationship<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="Relationship" type="text" name="Relationship" class="form-control"
+                                          ng-model="formData.Relationship">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Beneficiary<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="Beneficiary" type="text" name="Beneficiary" class="form-control"
+                                          ng-model="formData.Beneficiary">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Type<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="Type" type="text" name="Type" class="form-control"
+                                          ng-model="formData.Type">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Gender<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="gender" type="text" name="gender" class="form-control"
+                                          ng-model="formData.gender">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Address<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="Address" type="text" name="Address" class="form-control"
+                                          ng-model="formData.Address">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Telephone No<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="TelephoneNo" type="number" name="TelephoneNo" class="form-control"
+                                          ng-model="formData.TelephoneNo">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Email<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="email" type="email" name="email" class="form-control"
+                                          ng-model="formData.email">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Id No<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="idNo" type="type" name="idNo" class="form-control"
+                                          ng-model="formData.idNo">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <label class="control-label col-sm-2">Percentage Allocation<span class="required">*</span></label>
+                  
+                                    <div class="col-sm-3">
+                                       <input id="percentageallocation" type="type" name="percentageallocation" class="form-control"
+                                          ng-model="formData.percentageallocation">
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
 
                         </div>
@@ -555,7 +641,7 @@
 
                         </div>
                         <div data-ng-switch on="showUnderAgeOptions">
-                           <div data-ng-switch-when="true">
+                           <div data-ng-switch-when="1">
                               <div class="form-group">
                                  <label class="control-label col-sm-2"
                                     for="trusteefirstname">{{'label.input.trusteename' |
