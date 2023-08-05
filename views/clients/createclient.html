@@ -396,7 +396,7 @@
                            data-ng-change="setChoice()">
                      </div>
                      <div data-ng-switch on="choice">
-                        <div data-ng-switch-when="1">
+                        <div data-ng-switch-when="true">
                            <label class="control-label col-sm-2">{{'label.input.activationdate' | translate}}<span
                                  class="required">*</span></label>
                            <div class="col-sm-3">
@@ -419,8 +419,7 @@
                      <label class="control-label col-sm-2">{{ 'label.input.opensavingsproduct' | translate
                         }}&nbsp;</label>
                      <div class="col-sm-3">
-                        <input id="opensavingsproduct" type="checkbox" ng-model="savings.opensavingsproduct"
-                           ng-true-value="true" ng-false-value="false">
+                        <input id="opensavingsproduct" type="checkbox" ng-model="savings.opensavingsproduct" ng-true-value="true" ng-false-value="false">
                      </div>
                      <div ng-show="savings.opensavingsproduct">
                         <label class="control-label col-sm-2">{{'label.input.savingproduct' | translate}}</label>
@@ -685,12 +684,6 @@
                            </div>
 
                         </div>
-
-
-
-
-
-
                      </div>
 
                   </div>
