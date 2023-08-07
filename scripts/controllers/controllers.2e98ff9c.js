@@ -4064,8 +4064,8 @@
             //familymembers
             scope.formData.familyMembers = [];
             scope.familyArray = [];
+            scope.familyArray[$index] = [];
             scope.datatables = [];
-            scope.familyArray[$index] = {};
             scope.noOfTabs = 1;
             scope.step = '-';
             scope.formData.datatables = [];
@@ -4242,14 +4242,6 @@
                     scope.choice = 1;
                 }
                 else if (!this.formData.active) {
-                    scope.choice = 0;
-                }
-            };
-            scope.setChoice = function () {
-                if (this.familyArray[$index].isDependent) {
-                    scope.choice = 1;
-                }
-                else if (!this.familyArray[$index].isDependent) {
                     scope.choice = 0;
                 }
             };
