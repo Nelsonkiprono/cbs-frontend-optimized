@@ -4469,16 +4469,17 @@
                     scope.formData.familyMembers.push(temp);
                 }
 
-                //is dependent options
-
-                scope.setChoice = function () {
-                    if (this.formData.isDependent) {
-                        scope.choice = 1;
+                //isdependent function 
+                function checkMe() {
+                    var isdependent = document.getElementById("isDependent");
+                    var text = document.getElementById("form");
+                    if (isdependent = true) {
+                        text.style.display = "block";
                     }
-                    else if (!this.formData.isDependent) {
-                        scope.choice = 0;
+                    else {
+                        text.style.display = "none";
                     }
-                };
+                }
 
 
 
