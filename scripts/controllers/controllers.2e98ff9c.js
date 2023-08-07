@@ -4469,19 +4469,6 @@
                     scope.formData.familyMembers.push(temp);
                 }
 
-                //isdependent function 
-                function checkMe() {
-                    var isdependent = document.getElementById("isDependent");
-                    var text = document.getElementById("form");
-                    if (isdependent = true) {
-                        text.style.display = "block";
-                    }
-                    else {
-                        text.style.display = "none";
-                    }
-                }
-
-
 
                 resourceFactory.clientResource.save(this.formData, function (data) {
                     location.path('/viewclient/' + data.clientId);
