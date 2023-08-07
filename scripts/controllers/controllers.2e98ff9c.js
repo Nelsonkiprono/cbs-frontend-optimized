@@ -4472,10 +4472,10 @@
                 //is dependent options
 
                 scope.setChoice = function () {
-                    if (this.familyArray[i].isDependent) {
+                    if (this.formData.isDependent) {
                         scope.choice = 1;
                     }
-                    else if (!this.familyArray[i].isDependent) {
+                    else if (!this.formData.isDependent) {
                         scope.choice = 0;
                     }
                 };
