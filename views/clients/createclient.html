@@ -528,15 +528,20 @@
 
                         </div>
 
-                        <div class="form-group">
-                           <label class="control-label col-sm-2" for="isDependent">{{ 'label.input.isDependent' |
-                              translate }}</label>
-
+                        <div class="form-group" has-permission="ACTIVATE_ISDEPENDENT">
+                           <label class="control-label col-sm-2">{{'label.input.isDependent' | translate}}</label>
                            <div class="col-sm-3">
-                              <input type="checkbox" class="input-mini-small" id="isDependent" name="isDependent"
-                                 ng-model="familyArray[$index].isDependent">
+                              <input id="activeCheckbox" type="checkbox" ng-model="familyArray[$index].isDependent"
+                                 data-ng-change="setChoice()">
                            </div>
-
+                           <div data-ng-switch on="choice">
+                              <div data-ng-switch-when="1">
+                                 <label class="control-label col-sm-3">Name<span class="required">*</span></label>
+                                 <div class="col-sm-3">
+                                    <input id="Name" type="text" name="Name" ng-model="first.Name" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
                         </div>
 
                         <div class="form-group">
