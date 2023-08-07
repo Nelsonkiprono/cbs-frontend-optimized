@@ -4244,14 +4244,6 @@
                     scope.choice = 0;
                 }
             };
-            scope.setChoice = function () {
-                if (this.familyArray[i].isDependent) {
-                    scope.choice = 1;
-                }
-                else if (!this.familyArray[i].isDependent) {
-                    scope.choice = 0;
-                }
-            };
             if (routeParams.groupId) {
                 scope.cancel = '#/viewgroup/' + routeParams.groupId
                 scope.groupid = routeParams.groupId;
@@ -4477,7 +4469,16 @@
                     scope.formData.familyMembers.push(temp);
                 }
 
-                //
+                //is dependent options
+
+                scope.setChoice = function () {
+                    if (this.familyArray[i].isDependent) {
+                        scope.choice = 1;
+                    }
+                    else if (!this.familyArray[i].isDependent) {
+                        scope.choice = 0;
+                    }
+                };
 
 
 
