@@ -4064,7 +4064,6 @@
             //familymembers
             scope.formData.familyMembers = [];
             scope.familyArray = [];
-            scope.familyArray[$index] = [];
             scope.datatables = [];
             scope.noOfTabs = 1;
             scope.step = '-';
