@@ -2800,10 +2800,10 @@
                 }
             };
             scope.setChoice = function () {
-                if (this.formData.isDependent) {
+                if (this.familyArray[$index].isDependent) {
                     scope.choice = 1;
                 }
-                else if (!this.formData.isDependent) {
+                else if (!this.familyArray[$index].isDependent) {
                     scope.choice = 0;
                 }
             };
