@@ -4694,6 +4694,13 @@
                     var dobDate = dateFilter(data.dateOfBirth, scope.df);
                     scope.date.dateOfBirth = new Date(dobDate);
                 }
+                var isDependent = formData(data.isDependent, scope.formData);
+                scope.data.isDependent = new formData(isDependent);
+                if (data.isDependent) {
+                    scope.choice = 1;
+                    scope.showSavingOptions = 'false';
+                    scope.opensavingsproduct = 'false';
+                }
 
 
 

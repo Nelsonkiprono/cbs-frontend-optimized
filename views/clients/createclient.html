@@ -529,16 +529,18 @@
                         </div>
 
                         <div class="form-group">
-                           <label class="control-label col-sm-2" for="isDependent">{{'label.input.isDependent' |
+                           <label class="control-label col-sm-2">{{'label.input.isDependent' |
                               translate}}</label>
                            <div class="col-sm-3">
-                              <input id="isDependent" type="checkbox" ng-model="familyArray[$index].isDependent"
-                                 onclick="checkMe()">
+                              <input id="isDependent" type="checkbox" ng-model="formData.isDependent"
+                                 data-ng-change="setChoice()">
                            </div>
-                           <div class="form-group">
-                              <label class="control-label col-sm-3">Name<span class="required">*</span></label>
-                              <div class="col-sm-3">
-                                 <input id="Name" type="text" name="Name" ng-model="first.Name" class="form-control">
+                           <div data-ng-switch on="choice">
+                              <div data-ng-switch-when="1">
+                                 <label class="control-label col-sm-3">Name<span class="required">*</span></label>
+                                 <div class="col-sm-3">
+                                    <input id="Name" type="text" name="Name" ng-model="first.Name" class="form-control">
+                                 </div>
                               </div>
                            </div>
                         </div>
