@@ -2800,10 +2800,10 @@
                 }
             };
             scope.setChoice = function () {
-                if (this.familyArray[$index].isDependent) {
+                if (this.formData.isDependent) {
                     scope.choice = 1;
                 }
-                else if (!this.familyArray[$index].isDependent) {
+                else if (!this.formData.isDependent) {
                     scope.choice = 0;
                 }
             };
@@ -4241,6 +4241,14 @@
                     scope.choice = 1;
                 }
                 else if (!this.formData.active) {
+                    scope.choice = 0;
+                }
+            };
+            scope.setChoice = function () {
+                if (this.formData.isDependent) {
+                    scope.choice = 1;
+                }
+                else if (!this.formData.isDependent) {
                     scope.choice = 0;
                 }
             };
@@ -11756,6 +11764,15 @@
                     scope.choice = 1;
                 }
                 else if (!this.formData.active) {
+                    scope.choice = 0;
+                }
+            };
+
+            scope.setChoice = function () {
+                if (this.formData.isDependent) {
+                    scope.choice = 1;
+                }
+                else if (!this.formData.isDependent) {
                     scope.choice = 0;
                 }
             };
@@ -24709,6 +24726,13 @@
                     scope.choice = 0;
                 }
 
+                if (this.formData.isDependent) {
+                    scope.choice = 1;
+                }
+                else if (!this.formData.isDependent) {
+                    scope.choice = 0;
+                }
+
                 if (this.formData.enablepaymenttypes) {
                     scope.choice = 1;
                 } else if (!this.formData.enablepaymenttypes) {
@@ -25980,6 +26004,15 @@
                     scope.choice = 1;
                 }
                 else if (!this.formData.active) {
+                    scope.choice = 0;
+                }
+            };
+
+            scope.setChoice = function () {
+                if (this.formData.isDependent) {
+                    scope.choice = 1;
+                }
+                else if (!this.formData.isDependent) {
                     scope.choice = 0;
                 }
             };
